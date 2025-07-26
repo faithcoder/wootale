@@ -72,7 +72,8 @@ class WooTale {
         $this->loader->add_action('plugins_loaded', $plugin_admin, 'check_dependencies');
 
         // Admin menu and settings
-        $this->loader->add_action('admin_menu', $plugin_admin, 'add_admin_menu');
+        $this->loader->add_action('admin_menu', $plugin_admin, 'add_admin_menu', 80);
+        
         $this->loader->add_filter('plugin_action_links_' . WOOTALE_PLUGIN_BASENAME, $plugin_admin, 'add_settings_link');
 
         // Product meta fields
