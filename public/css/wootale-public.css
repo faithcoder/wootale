@@ -1,0 +1,48 @@
+/* WooTale Public Styles */
+
+.wootale-page-template,
+.wootale-elementor-template,
+.wootale-auto-description {
+    margin: 20px 0;
+    clear: both;
+    width: 100%;
+}
+
+.wootale-template-error {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.wootale-default-description {
+    margin: 20px 0;
+}
+
+.wootale-page-template .entry-title,
+.wootale-page-template .page-title {
+    display: none;
+}
+
+/* Ensure proper spacing and display */
+.wootale-auto-description p:first-child {
+    margin-top: 0;
+}
+
+.wootale-auto-description p:last-child {
+    margin-bottom: 0;
+}
+
+.wootale-tab-content {
+    padding: 20px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .wootale-page-template,
+    .wootale-elementor-template {
+        margin: 15px 0;
+    }
+}
